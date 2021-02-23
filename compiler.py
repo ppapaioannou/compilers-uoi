@@ -3,8 +3,8 @@
 
 #written and compiled using Python 2.7.16
 
-#to run type python final.py XXXX.min
-#where XXXX is the filename
+#to run type python compiler.py
+#and then when prompted type the filename with the .min extension
 
 import sys
 
