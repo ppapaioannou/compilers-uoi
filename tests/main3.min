@@ -1,0 +1,24 @@
+program main3 {
+	declare A;
+	declare B;
+	
+	function f1() {
+		
+		function f2() {
+			{
+			B:=1;
+			return 1
+			}
+		}
+		
+		{
+		A:=f2();
+		return A
+		}
+	}
+	{
+	print(f1());
+	print(A);
+	print(B)
+	}
+}

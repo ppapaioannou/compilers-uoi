@@ -1,0 +1,16 @@
+program Calling {
+	procedure P1(){
+		procedure P3(){
+			print(1)
+		}
+		procedure P4(){
+			call P3()
+		}
+		call P4()
+	}
+	procedure P2(){
+		call P1()
+		
+	}
+	call P2()
+}

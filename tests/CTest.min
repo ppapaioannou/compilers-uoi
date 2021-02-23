@@ -1,0 +1,17 @@
+program CTest{
+  declare x,y,z;
+  declare inp;
+    {
+	input(x);
+	input(y);
+	input(z);
+	forcase 
+	  when(y>10) : {print(1);y:=1}
+	  when(x>10) : {print(2);x:=2}
+	  when(z>10) : {print(3);z:=3}
+	default: {print (0)};
+	print(x);
+	print(y);
+	print(z)
+	}
+}

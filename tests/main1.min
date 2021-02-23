@@ -1,0 +1,20 @@
+program main1
+{	declare a,b,c;
+
+	function f(in a,inout b)
+	
+	{
+		{
+		b:=b+1;
+		c:=4;
+		return b
+		}
+	}
+	//main
+	{
+	a:=1;
+	c:=f(in a, inout b);
+	print(c);
+	print(b)
+	}
+}

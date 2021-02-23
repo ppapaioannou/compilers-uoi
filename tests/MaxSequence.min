@@ -1,0 +1,38 @@
+program MaxSequence {
+  declare a,b,c;
+  procedure test() {
+	if([a>b] and [a>c])
+	  then if ([b>c])
+		     then {print(a);
+				   print(b);
+				   print(c)}
+		   else {print(a);
+				 print(c);
+				 print(b)}
+	else 
+	if([b>a] and [b>c])
+	  then if(a>c)
+		     then {print(b);
+				   print(a);
+				   print(c)}
+	       else {print(b);
+			     print(c);
+				 print(a)}
+	else
+	if([c>a] and [c>b])
+	  then if (a>b)
+		     then {print(c);
+				   print(a);
+				   print(b)}
+		   else {print(c);
+		         print(b);
+				 print(a)}
+
+  }
+  {
+    a:=1;
+	b:=6;
+	c:=66;
+    call test()
+  }
+}

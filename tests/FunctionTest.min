@@ -1,0 +1,12 @@
+program FunctionTest {
+  declare a, x;
+  
+  function f(in a) {
+	return (a*10)
+  }
+  {
+	x := 4;
+	a := f(in 10*x);
+	print(a);
+  }
+}
